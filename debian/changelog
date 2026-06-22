@@ -1,3 +1,16 @@
+libdbi-perl (1.643-3ubuntu0.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: stack buffer overflow
+    - debian/patches/CVE-2026-9698.patch: replace static sprintf buffer with
+      dynamic newSVpvf formatting in DBI.xs.
+    - CVE-2026-9698
+  * SECURITY UPDATE: heap buffer overflow
+    - debian/patches/CVE-2026-10879.patch: increases buffer allocation size to
+      safely accommodate multi-digit placeholder expansion in DBI.xs.
+    - CVE-2026-10879
+
+ -- Ian Constantin <ian.constantin@canonical.com>  Mon, 22 Jun 2026 10:05:13 +0300
+
 libdbi-perl (1.643-3build3) jammy; urgency=medium
 
   * No-change rebuild for the perl update.

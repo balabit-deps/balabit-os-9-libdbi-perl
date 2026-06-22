@@ -4,3 +4,5 @@ t__80proxy.t___syslogd.patch
 spelling.patch
 t-51dbm_file.t-add-test-from-RT-99508.patch
 lib-DBD-File.pm-fix-CVE-2014-10401.patch
+CVE-2026-9698.patch
+CVE-2026-10879.patch
