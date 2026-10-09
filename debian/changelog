@@ -1,3 +1,27 @@
+libdbi-perl (1.643-3ubuntu0.4) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Unsafe Reflection
+    - debian/patches/CVE-2026-78030.patch: Load serializer class using
+      Module::Load
+    - CVE-2026-78030
+  * SECURITY UPDATE: Type Confusion
+    - debian/patches/CVE-2026-88816.patch: Fix FetchHashKeyName on IV/NV
+    - CVE-2026-88816
+
+ -- Bruce Cable <bruce.cable@canonical.com>  Fri, 09 Oct 2026 13:36:03 +1100
+
+libdbi-perl (1.643-3ubuntu0.3) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of Service
+    - debian/patches/CVE-2026-73193.patch: Limit statements to 292 Mb in
+      preparse (CVE-2026-73193)
+    - debian/patches/CVE-2026-73194.patch: Force placeholder limit on :#
+      and :p# too (CVE-2026-73194)
+    - CVE-2026-73193
+    - CVE-2026-73194
+
+ -- Bruce Cable <bruce.cable@canonical.com>  Thu, 24 Sep 2026 16:15:13 +1000
+
 libdbi-perl (1.643-3ubuntu0.1) jammy-security; urgency=medium
 
   * SECURITY UPDATE: stack buffer overflow
